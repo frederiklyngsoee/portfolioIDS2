@@ -6,6 +6,8 @@ class KMeans:
         self.X = np.array(coords)
         self.kmeans = K(n_clusters=2, random_state=0).fit(self.X)
         
+    def update(self):
+        
 
     def returnKMeans(self):
         return self.kmeans

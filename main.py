@@ -6,7 +6,6 @@ def main():
         graphyboi = GraphController()
         graphyboi.update()
         kmeansyboi = KMeans(graphyboi.coords)
-        print(type(kmeansyboi.returnKMeans()))
     except:
         print("Nothing in coords")
 
