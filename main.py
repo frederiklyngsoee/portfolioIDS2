@@ -1,19 +1,17 @@
-from GraphController import *
-from KMeans import *
+
+from Graph import *
+from UserInput import *
+from KMeansAlgorithm import *
 
 def main():
-    try:
-        graphyboi = GraphController()
-        graphyboi.update()
-        kmeansyboi = KMeans(graphyboi.coords)
-    except:
-        print("Nothing in coords")
 
+    graph = Graph()
+    kmeans = KMeansAlgorithm()
+    usein = UserInput(graph,kmeans)
+    graph.updateGraph()
 
 if __name__ == "__main__":
-    main()   
-
-
+    main()
 
 
 
